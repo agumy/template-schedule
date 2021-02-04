@@ -1,12 +1,17 @@
 import Head from 'next/head'
 
+import { DayCalendar } from '../components/organisms/DayCalendar'
+
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
-        <title>Create Next App</title>
+        <title>Schedule Template</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    </div>
+      <div className="h-full">
+        <DayCalendar />
+      </div>
+    </>
   )
 }
